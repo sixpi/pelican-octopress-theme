@@ -37,10 +37,42 @@ Plugins
 This theme add a nice section on the sidebar with a list of GitHub repositories of the user.
 You can enable it by using these settings:
 
-- ``GITHUB_USER``: (required to enable) username
-- ``GITHUB_REPO_COUNT``: 5
-- ``GITHUB_SKIP_FORK``: False
-- ``GITHUB_SHOW_USER_LINK``: False
+- ``GITHUB_USER``: (required to enable) your username
+- ``GITHUB_REPO_COUNT``: ``5``
+- ``GITHUB_SKIP_FORK``: ``False``
+- ``GITHUB_SHOW_USER_LINK``: ``False``
+
+This theme also allows sharing via Twitter, Google Plus, and Facebook.  To
+enable any of these, use the following settings:
+
+- ``TWITTER_USER``: (required to enable) your username
+- ``GOOGLE_PLUS_ID``: (required to enable) your ID
+- ``FACEBOOK_LIKE``: (required to enable) ``True``
+
+Extra Twitter options (default values are shown):
+
+- ``TWITTER_WIDGET_ID``: (required to enable feed) ID obtained from `twitter settings <https://twitter.com/settings/widgets>`_
+- ``TWITTER_TWEET_BUTTON``: ``False`` show twitter tweet button
+- ``TWITTER_FOLLOW_BUTTON``: ``False`` show twitter follow button
+- ``TWITTER_TWEET_COUNT``: ``3`` number of latest tweets to show
+- ``TWITTER_SHOW_REPLIES``: ``'false'`` whether to list replies among latest tweets
+- ``TWITTER_SHOW_FOLLOWER_COUNT``: ``'true'`` show number of followers
+
+Extra google plus options (default values are shown):
+
+- ``GOOGLE_PLUS_ONE``: ``False`` show +1 button
+- ``GOOGLE_PLUS_HIDDEN``: ``False`` hide the google plus sidebar link.
+
+Sidebar image
+-------------
+
+- ``SIDEBAR_IMAGE``: Adds specified image to sidebar. Example value: "images/author_photo.jpg"
+- ``SIDEBAR_IMAGE_ALT``: Alternative text for sidebar image
+- ``SIDEBAR_IMAGE_WIDTH``: Width of sidebar image
+
+- ``SEARCH_BOX``: set to true to enable site search box
+- ``SITESEARCH``: [default: 'http://google.com/search'] search engine to which
+  search form should be pointed (optional)
 
 Contribute
 ----------
@@ -55,6 +87,10 @@ Authors
 - `Maurizio Sambati`_: Initial porting of the theme.
 - `Geoffrey Lehée`_: GitHub plugin, some cleaning and some missing standard Pelican features (social plugins and links).
 - `Ekin Ertaç`_: Open links in other window, add tags and categories.
+- `Jake Vanderplas`_: Work on Twitter, Google plus, Facebook, and Disqus plugins.
+- `Nicholas Terwoord`_: Additional fixes for Twitter, Google plus, and site search
+- ... and many others. `Check the contributors`_. 
+
 
 .. _`Pelican`: http://getpelican.com
 .. _`Octopress`: http://octopress.org
@@ -63,3 +99,6 @@ Authors
 .. _`Maurizio Sambati`: https://github.com/duilio
 .. _`Geoffrey Lehée`: https://github.com/socketubs
 .. _`Ekin Ertaç`: https://github.com/ekinertac
+.. _`Jake Vanderplas`: https://github.com/jakevdp
+.. _`Nicholas Terwoord`: https://github.com/nt3rp
+.. _`Check the contributors`: https://github.com/duilio/pelican-octopress-theme/graphs/contributors

@@ -6,10 +6,11 @@
     {% include '_includes/article.html' %}
     <footer>
       {% include '_includes/article_infos.html' %}
+      {% include '_includes/sharing.html' %}
     </footer>
   </article>
 
-  {% if DISQUS_SITENAME %}
+  {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
   <section>
     <h1>Comments</h1>
     <div id="disqus_thread" aria-live="polite">{% include '_includes/disqus_thread.html' %}</div>
